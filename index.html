@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Últimas Postagens do Instagram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Estilos para as últimas postagens do Instagram */
+        .insta-posts-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 20px;
+            background-color: transparent; /* Mantém o fundo do tema existente */
+        }
+
+        .insta-header {
+            margin-bottom: 10px;
+        }
+
+        .insta-title {
+            margin: 0;
+            margin-bottom: 20px; /* Aumenta a margem inferior do título */
+            font-size: 2.5vw; /* Tamanho responsivo baseado na largura da viewport */
+        }
+
+        .insta-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 30px; /* Aumenta o espaço abaixo das estatísticas */
+        }
+
+        .insta-stat {
+            text-align: center;
+        }
+
+        .insta-stat-value {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .insta-card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+        }
+
+        .insta-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: calc(100% - 40px);
+            max-width: 300px;
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .insta-card:hover {
+            transform: scale(1.02);
+        }
+
+        .insta-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .insta-card .insta-info {
+            padding: 10px;
+        }
+
+        .insta-card .insta-username {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .insta-card .insta-likes {
+            color: #888;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .insta-card a {
+            text-decoration: none;
+            color: #000;
+            display: block;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .insta-title {
+                font-size: 4vw; /* Ajusta o tamanho do título em telas menores */
+            }
+            .insta-card {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .insta-title {
+                font-size: 5vw; /* Ajusta o tamanho do título em telas ainda menores */
+            }
+            .insta-card {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="insta-posts-container">
+        <div class="insta-header">
+            <a href="https://www.instagram.com/poleacare/" target="_blank" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" style="width: 40px; height: auto; margin-right: 10px;">
+                <h2 class="insta-username">@poleacare</h2>
+            </a>
+        </div>
+        <h1 class="insta-title">Veja nossos principais post's!</h1>
+
+        <!-- Seção de Estatísticas -->
+        <div class="insta-stats">
+            <div class="insta-stat">
+                <div class="insta-stat-value">64</div>
+                <div>Postagens</div>
+            </div>
+            <div class="insta-stat">
+                <div class="insta-stat-value">243</div>
+                <div>Seguidores</div>
+            </div>
+            <div class="insta-stat">
+                <div class="insta-stat-value">35</div>
+                <div>Seguindo</div>
+            </div>
+        </div>
+
+        <div class="insta-card-container">
+            <div class="insta-card">
+                <a href="https://linkdaimagem1.com" target="_blank">
+                    <img src="https://instagram.fbnu3-1.fna.fbcdn.net/v/t39.30808-6/461180986_17864589942227136_5465630848363773027_n.jpg?stp=dst-jpg_e35_tt6&_nc_cb=dae8a7dc-ddb356e0&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMDgweDEwODAuc2RyLmYzMDgwOC5kZWZhdWx0X2ltYWdlLmpwZWdsaV84MDA5MjMifQ&_nc_ht=instagram.fbnu3-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=SERPJfDEGFIQ7kNvgF9lc6f&_nc_gid=e7edc1ae3fec466495ddb99527d2fab0&edm=AP4sbd4AAAAA&ccb=7-5&ig_cache_key=MzQ2MzcxNzYyNDEwODM0MzEwNg%3D%3D.3-ccb7-5&oh=00_AYB9Iys9dpci3jwgi6fj67u5gadnG5EehY_-9qJbklwQBA&oe=66F9141D&_nc_sid=7a9f4b" alt="Post 1">
+                    <div class="insta-info">
+                        <div class="insta-username"><i class="fas fa-heart"></i> 5 curtidas</div>
+                        <div class="insta-likes">O Sérum Rejuvenescedor da Polea Care é aquele cuidado especial que sua...</div>
+                    </div>
+                </a>
+            </div>
+            <div class="insta-card">
+                <a href="https://www.instagram.com/p/DAPE28zvq1c/?img_index=1" target="_blank">
+                    <img src="https://instagram.fbnu3-1.fna.fbcdn.net/v/t39.30808-6/461104068_17864457714227136_8805176796732322619_n.jpg?stp=dst-jpg_e35_tt6&_nc_cb=dae8a7dc-ddb356e0&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMDgweDEwODAuc2RyLmYzMDgwOC5kZWZhdWx0X2ltYWdlLmpwZWdsaV84MDA5MjMifQ&_nc_ht=instagram.fbnu3-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=W2898QLZNdsQ7kNvgG1VCp-&_nc_gid=e7edc1ae3fec466495ddb99527d2fab0&edm=AP4sbd4AAAAA&ccb=7-5&ig_cache_key=MzQ2MzAwODAwMTg1MjM2ODQ4NQ%3D%3D.3-ccb7-5&oh=00_AYBlpKo8hVui8o5SAN7O2e51ah7dnvYnfyy7beX-ymiTyg&oe=66F918BC&_nc_sid=7a9f4b" alt="Post 2">
+                    <div class="insta-info">
+                        <div class="insta-username"><i class="fas fa-heart"></i> 8 curtidas</div>
+                        <div class="insta-likes">Cuidar da pele é um ato de amor-próprio. Às vezes...</div>
+                    </div>
+                </a>
+            </div>
+            <div class="insta-card">
+                <a href="https://www.instagram.com/p/DAMfx-XvLwW/?img_index=1" target="_blank">
+                    <img src="https://instagram.fbnu3-1.fna.fbcdn.net/v/t39.30808-6/460934581_17864313243227136_8561386159991990699_n.jpg?stp=dst-jpg_e35_tt6&_nc_cb=dae8a7dc-ddb356e0&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyLmYzMDgwOC5kZWZhdWx0X2ltYWdlLmpwZWdsaV84MDA5MjMifQ&_nc_ht=instagram.fbnu3-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=xkslEnHH1ysQ7kNvgHeKHDS&edm=AP4sbd4AAAAA&ccb=7-5&ig_cache_key=MzQ2MjI4MTk4MDEyNzUyMTIxOA%3D%3D.3-ccb7-5&oh=00_AYDaYP3jk0xddhNZJ2akQMQU2unDPUSpHGntpjXGIeb4yA&oe=66F8EB63&_nc_sid=7a9f4b" alt="Post 3">
+                    <div class="insta-info">
+                        <div class="insta-username"><i class="fas fa-heart"></i> 12 curtidas</div>
+                        <div class="insta-likes">Autocuidado é sobre encontrar tempo para você...</div>
+                    </div>
+                </a>
+            </div>
+            <div class="insta-card">
+                <a href="https://www.instagram.com/p/DAEvbjxP2mf/?img_index=1" target="_blank">
+                    <img src="https://instagram.fbnu3-1.fna.fbcdn.net/v/t39.30808-6/460477622_17863908858227136_7604881855522614464_n.jpg?stp=dst-jpg_e35_tt6&_nc_cb=dae8a7dc-ddb356e0&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyLmYzMDgwOC5kZWZhdWx0X2ltYWdlLmpwZWdsaV84MDA5MjMifQ&_nc_ht=instagram.fbnu3-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=8qibGWlT-bQQ7kNvgEDylJ-&_nc_gid=e7edc1ae3fec466495ddb99527d2fab0&edm=AP4sbd4AAAAA&ccb=7-5&ig_cache_key=MzQ2MDA5OTAwODg2NzczMjU3NA%3D%3D.3-ccb7-5&oh=00_AYAT2pdLgTo6CcVz06L-iRoyZGPAQpXrgCh1W9zKZc-8iw&oe=66F90B4F&_nc_sid=7a9f4b" alt="Post 4">
+                    <div class="insta-info">
+                        <div class="insta-username"><i class="fas fa-heart"></i> 14 curtidas</div>
+                        <div class="insta-likes">Nos dias de sol intenso, cuidar da pele é...</div>
+                    </div>
+                </a>
+            </div>
+            <div class="insta-card">
+                <a href="https://www.instagram.com/p/DAAEw_EpMfW/" target="_blank">
+                    <img src="https://instagram.fbnu3-1.fna.fbcdn.net/v/t39.30808-6/460139667_17863656495227136_8167008552004757861_n.jpg?stp=dst-jpg_e35_p1080x1080_tt6&_nc_cb=dae8a7dc-ddb356e0&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE4MDAuc2RyLmYzMDgwOC5kZWZhdWx0X2ltYWdlLmpwZWdsaV84MDA5MjMifQ&_nc_ht=instagram.fbnu3-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=HXri_4RHDpcQ7kNvgEGw8i6&_nc_gid=e7edc1ae3fec466495ddb99527d2fab0&edm=AP4sbd4AAAAA&ccb=7-5&ig_cache_key=MzQ1ODc4NTQ3MjI2NTExMTUxMA%3D%3D.3-ccb7-5&oh=00_AYCBp_bZN1RM5zTA2fCalWkJADDIoJk_34a36AybX8D_Rg&oe=66F8FE80&_nc_sid=7a9f4b" alt="Post 5">
+                    <div class="insta-info">
+                        <div class="insta-username"><i class="fas fa-heart"></i> 15 curtidas</div>
+                        <div class="insta-likes">O segredo para uma pele revitalizada...</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
